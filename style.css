@@ -12,6 +12,9 @@ header {
   padding: 0px 0px;
   height: 100px;
   background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 ul {
   list-style: none;
@@ -725,16 +728,33 @@ ul a {
 }
 .in-card-sec-6 {
   display: flex;
-  flex-direction: column;
   border-radius: 1rem;
   background-color: white;
   box-shadow: 0px 10px 37px -14px rgba(0, 0, 0, 0.25);
   padding: 0px 30px;
-  height: 11.5rem;
+  height: 17rem;
   width: 28rem;
   justify-content: center;
   margin: 0px 10px;
 }
+
+.card-image {
+  width: 100%;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+}
+.card-image img {
+  width: 100%;
+}
+.card-image p {
+  margin: 12px 0px 12px 0;
+}
+
 .text-card-6 {
   border-left: 2px solid #fd5b1b;
   width: 500px;
@@ -796,9 +816,12 @@ ul a {
   display: flex;
   width: 100%;
   justify-content: Center;
+  margin-top: 30px;
 }
 .sec-7-left {
-  display: inline-block;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
   margin: 0px 90px;
 }
 .sec-7-left h2 {
@@ -819,6 +842,18 @@ ul a {
   align-items: center;
   line-height: 25px;
   margin-bottom: 20px;
+}
+.a_incard {
+  /* border: 1px solid rgba(221, 221, 221, 1); */
+  /* border-radius: 10px; */
+  /* width: 300px; */
+  /* height: 150px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  /* margin-bottom: 20px; */
 }
 .in-card-sec-7 img {
   width: 25px;
@@ -843,6 +878,8 @@ ul a {
 .with a {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
+  color: black;
+  text-decoration: none;
 }
 .with img {
   width: 10px;
@@ -1118,6 +1155,9 @@ footer {
   .sec-1-img img {
     height: 30vh;
   }
+  .in-card-sec-6 {
+    height: 15rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1164,7 +1204,7 @@ footer {
   }
   .in-card-sec-6 {
     width: 20rem;
-    height: 13rem;
+    height: 18rem;
     margin: 0px 10px;
   }
   .image-card-6 {
